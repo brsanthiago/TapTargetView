@@ -239,7 +239,7 @@ public class TapTargetView extends View {
     };
 
     final ValueAnimator expandAnimation = new FloatValueAnimatorBuilder()
-            .duration(250)
+            .duration(500)
             .delayBy(250)
             .interpolator(new AccelerateDecelerateInterpolator())
             .onUpdate(new FloatValueAnimatorBuilder.UpdateListener() {
@@ -257,7 +257,7 @@ public class TapTargetView extends View {
             .build();
 
     final ValueAnimator pulseAnimation = new FloatValueAnimatorBuilder()
-            .duration(1000)
+            .duration(1500)
             .repeat(ValueAnimator.INFINITE)
             .interpolator(new AccelerateDecelerateInterpolator())
             .onUpdate(new FloatValueAnimatorBuilder.UpdateListener() {
